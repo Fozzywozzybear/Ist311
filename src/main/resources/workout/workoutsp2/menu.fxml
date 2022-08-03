@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workout.workoutsp2.controller.MenuController">
+   <children>
+      <Button fx:id="WeightWorkouts" layoutX="63.0" layoutY="65.0" mnemonicParsing="false" onAction="#switchToWeightWorkout" text="WeightWorkouts" />
+      <Button layoutX="433.0" layoutY="65.0" mnemonicParsing="false" onAction="#switchToCaridoWorkout" text="CardioWorkouts" />
+      <Button layoutX="63.0" layoutY="269.0" mnemonicParsing="false" onAction="#SwitchToCalorieTracker" text="CalorieTracker" />
+      <Button layoutX="433.0" layoutY="269.0" mnemonicParsing="false" onAction="#SwitchToCalendar" text="Calendar" />
+      <Label layoutX="286.0" layoutY="14.0" text="Menu" />
+      <Button fx:id="ExitButton" layoutY="2.0" mnemonicParsing="false" onAction="#switchToLogin" text="Exit" />
+      <Text layoutX="24.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go to Weight workouts to add weight workouts to your log!" wrappingWidth="170.61328125" />
+      <Text layoutX="399.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go to Cardio workouts to add Cardio workouts to your log!" wrappingWidth="170.61328125" />
+      <Text layoutX="63.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go to Calorie Tracker to add meals you have eaten to your log!" wrappingWidth="92.0" />
+      <Text layoutX="379.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go to your calendar to see all past info you have added over time!" wrappingWidth="170.61328125" />
+   </children>
+</AnchorPane>

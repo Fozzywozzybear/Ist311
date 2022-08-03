@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workout.workoutsp2.controller.CardioSelectionController">
+   <children>
+      <Label layoutX="39.0" layoutY="145.0" text="Distance" />
+      <TextField fx:id="DistanceText" layoutX="125.0" layoutY="141.0" promptText="Miles traveled" />
+      <TextField fx:id="TimeSpentText" layoutX="125.0" layoutY="200.0" promptText="Time spent " />
+      <TextField fx:id="DateText" layoutX="125.0" layoutY="264.0" promptText="Please enter date" />
+      <Text layoutX="387.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estimate Calorie burned" />
+      <Button fx:id="BackBttn" layoutX="57.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnBackButtonClicked" text="Back" />
+      <Label layoutX="37.0" layoutY="204.0" text="Total time" />
+      <Label layoutX="64.0" layoutY="268.0" text="Date" />
+      <Label layoutX="38.0" layoutY="81.0" text="Type of cardio " />
+      <Text fx:id="CBurnedText" layoutX="439.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <ChoiceBox fx:id="CardioChoiceBox" layoutX="125.0" layoutY="77.0" prefWidth="150.0" />
+      <Text layoutX="300.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have selected " />
+      <Text fx:id="ChoiceText" layoutX="458.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button fx:id="UpdateBttn" layoutX="443.0" layoutY="273.0" mnemonicParsing="false" onAction="#onUpdateButtonClicked" text="Update" />
+      <Text fx:id="ErrorText" layoutX="65.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="CompleteText" layoutX="459.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="142.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select your type of cardio! Next enter the distance total time and date!" />
+      <Text layoutX="142.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

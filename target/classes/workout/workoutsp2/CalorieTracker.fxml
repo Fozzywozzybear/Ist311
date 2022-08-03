@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="760.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workout.workoutsp2.controller.CalorieTrackerController">
+   <children>
+      <Button fx:id="CalculateCaloriesBttn" layoutX="27.0" layoutY="32.0" mnemonicParsing="false" onAction="#onCalcCaloriesClick" text="Calculate Calories" />
+      <Text layoutX="82.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Goal" />
+      <Text layoutX="207.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meals" />
+      <Text layoutX="331.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Workouts" />
+      <Text layoutX="477.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remaing" wrappingWidth="51.357421875" />
+      <TextField fx:id="GoalsTxtField" layoutX="30.0" layoutY="82.0" prefHeight="25.0" prefWidth="128.0" promptText="Enter Calorie Goal" />
+      <TextField fx:id="MealsTxtField" layoutX="170.0" layoutY="82.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField fx:id="WorkoutsTxtField" layoutX="297.0" layoutY="82.0" prefHeight="25.0" prefWidth="134.0" promptText="Enter Calorie Burned " />
+      <TextField fx:id="RemainingTxtField" layoutX="455.0" layoutY="82.0" prefHeight="25.0" prefWidth="83.0" />
+      <GridPane fx:id="MealOneGrid" layoutX="27.0" layoutY="163.0" prefHeight="156.0" prefWidth="515.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="242.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="242.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="242.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="M1F1" GridPane.rowIndex="2" />
+            <TextField fx:id="M1F2" prefWidth="171.0" GridPane.rowIndex="3" />
+            <TextField fx:id="M1F3" GridPane.rowIndex="4" />
+            <TextField fx:id="M1S1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="M1S2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="M1S3" prefHeight="37.0" prefWidth="172.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Meal one" wrappingWidth="515.447265625" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Food" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Serving size" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Calories" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="M1C1" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="M1C2" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="M1C3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <GridPane fx:id="MealTwoGrid" layoutX="27.0" layoutY="326.0" prefHeight="170.0" prefWidth="515.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="242.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="242.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="242.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="M2F1" GridPane.rowIndex="2" />
+            <TextField fx:id="M2F2" GridPane.rowIndex="3" />
+            <TextField fx:id="M2F3" prefWidth="171.0" GridPane.rowIndex="4" />
+            <TextField fx:id="M2S1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="M2S2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="M2S3" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Meal two" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Food" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Serving Size" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Calories" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="M2C1" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="M2C2" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="M2C3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <GridPane fx:id="MealThreeGrid" layoutX="27.0" layoutY="535.0" prefHeight="156.0" prefWidth="515.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="242.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="242.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="242.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="61.0" minHeight="0.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="M3F1" GridPane.rowIndex="2" />
+            <TextField fx:id="M3F2" GridPane.rowIndex="3" />
+            <TextField fx:id="M3F3" GridPane.rowIndex="4" />
+            <TextField fx:id="M3S1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="M3S2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="M3S3" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Meal three" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Food" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Serving size" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Calories" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="M3C1" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="M3C2" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="M3C3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="SetGoalBttn" layoutX="485.0" layoutY="32.0" mnemonicParsing="false" onAction="#onSetGoalsClicked" text="Set Goals" />
+      <Button fx:id="UpdateWorkoutBttn" layoutX="338.0" layoutY="32.0" mnemonicParsing="false" onAction="#onUpdateWorkoutClicked" text="Update workout" />
+      <TextField fx:id="DateTxtField" layoutX="20.0" layoutY="123.0" promptText="Enter date" />
+      <Text layoutX="83.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+      <Button fx:id="BackBttn" layoutX="181.0" layoutY="32.0" mnemonicParsing="false" onAction="#OnBackButtonClicked" text="Back" />
+      <Text layoutX="170.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your calorie Goal first! Then add the calories you have bnurned from workouts!" />
+      <Text layoutX="171.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="After you have enter all your meals and the data, hit calculate calories!" />
+   </children>
+</AnchorPane>
